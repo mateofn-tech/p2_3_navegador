@@ -1,0 +1,38 @@
+/* --- style.css --- */
+
+/* Quitar márgenes y scroll, centrar lienzo */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;       
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Degradado de fondo verde */
+  background: linear-gradient(to bottom, #a8e6a3, #2e8b57); 
+  /* #a8e6a3 = verde claro
+     #2e8b57 = verde intenso */
+
+  font-family: Arial, sans-serif;
+}
+
+/* Lienzo p5.js */
+canvas {
+  display: block;            
+  box-shadow: 0 0 20px rgba(0,0,0,0.2); 
+  border-radius: 5px;        
+}
+
+/* Título opcional */
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  font-size: 2rem;
+  pointer-events: none; 
+}
